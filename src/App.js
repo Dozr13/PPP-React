@@ -1,5 +1,8 @@
 import React from 'react'
-import Header from './Components/Header/Header'
+
+import './Components/FontAwesomeIcons/index'
+
+import Landing from './Components/Landing/Landing'
 import routes from './routes'
 import {withRouter} from "react-router-dom";
 
@@ -11,13 +14,15 @@ import './App.scss';
 
 function App() {
   return (
+    <>
     <div className="App" style={{position: 'relative', overflow: 'hidden'}}>
-      <div style={{position: 'absolute'}}>
-        <Particles params={particlesConfig} />
+      <div className='particles' style={{position: 'absolute'}}>
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
       </div>
-      <Header />
-      {routes}
+      <Landing />
     </div>
+      {routes}
+    </>
   );
 }
 
