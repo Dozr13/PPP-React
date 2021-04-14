@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.footer-left{
+  width: 60%;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.footer-mid{
+
+}
+
+.footer-right{
+  width: 40%;
+  // height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+a.social-footer {
+  margin: 0 .5rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-5px);
+}
+
+a.github {
+  color: #000;
+}
+
+a.linkedIn {
+  color: #0072b1;
+}
+
+a.twitter {
+  color: #49a1eb;
+}

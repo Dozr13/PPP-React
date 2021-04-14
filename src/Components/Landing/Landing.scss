@@ -3,71 +3,59 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
 
-.header-content{
+.landing-content{
   height: 100%;
   width: 100%;  
 }
 
 .logo-container{
-  height: 55vh;
-  width: 100vw;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .logo{
   height: 100%;
   width: 102%;
-  margin-bottom: -2rem;
+  // margin-bottom: -2rem;
   z-index: 10;
 }
 
 .welcome-msg-container{
-  height: 20vh;
-  width: 85vw;
+  height: 50%;
+  width: 100%;
   font-family: 'PT Serif', serif;
   font-size: 2.3rem;
   color: $white;
-  margin: 0 auto;
+  overflow: hidden;
+}
+
+.welcome{
+  width: 100%;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .welcome-msg{
-  height: 10vh;
+  // height: 100%;
   width: 100%;
   line-height: 3rem;
   text-align: center;
 }
 
-.my-name{
-  margin: .1rem;
+.welcome-msg h3{
+  margin-bottom: 1rem;
 }
 
 .typewriter{
-  height: 25vh;
+  // height: 25vh;
   padding: 0px;
-  margin-top: 4rem;
+  // margin-top: 4rem;
 }
 
-.link-container{
-  height: 5vh;
-  width: 100%;
-  // justify-content: center;
-  // align-items: flex-end;
-  background-color: $white;
-}
 
-.link-list{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  // color: #fff;
-  font-weight: 700;
-}
-
-.page-link{
-  list-style: none;
-  font-size: 30px;
-  text-decoration: none;
-}
 
 
 

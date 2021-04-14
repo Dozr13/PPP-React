@@ -1,20 +1,27 @@
 
 
-
-
-.social-links-list{
-  height: 10vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+.text-container{
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
-.social-icons{
-  height: 10vh;
-  width: 10vw;
+
+.home-intro{
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
-.icon{
-  height: 10vh;
-  width: 10vw;
+
+
+
+.home-social-container{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-header{
+  font-size: 3rem;
 }

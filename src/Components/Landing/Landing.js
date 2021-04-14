@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {ReactComponent as Logo} from '../../Img/title-logo.svg'
-import {Link} from 'react-router-dom'
 import Type from './Type'
 
+import Particles from 'react-particles-js';
+import particlesConfig from '../../config/particlesConfig';
+
+import NavBar from '../NavBar/NavBar';
 
 
 import './Landing.scss'
@@ -10,40 +13,35 @@ import './Landing.scss'
 function Landing() {
   const [navMenu, setNavMenu] = useState(false);
 
-  const myName = <p className='my-name' style={{color: '#043363', marginTop: '.4rem', fontSize: '4rem'}}>Wade Pate</p>;
+  const myName = <p style={{color: '#043363', height: '20%', fontSize: '4rem', fontWeight: 700, textAlign: 'center', overflow: 'hidden'}}>Wade Pate</p>;
 
   return (
-    <h1>
-      <nav id='header'>
-        <section className='header-content'>
-          <section className='logo-container'>
-            <Logo className='logo' alt='Brand Logo' />
-            <div className='welcome-msg-container'>
-              <h4 className='welcome-msg'>
-                Hi!
-                <br/>
-                My name is
-                {myName}
-                and I'm a
-              </h4>
-              <br/>
-              <div className='typewriter' style={{padding: 10, textAlign: 'center'}}>
-                <Type />
-              </div>
-            </div>
-          </section>
+    <div id='landing'>
+      <div className='particles' style={{position: 'absolute'}}>
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
+      </div>
+      <div className='landing-content'>
+        <section className='logo-container'>
+          <Logo className='logo' alt='Brand Logo' />
         </section>
-        <section className='link-container'>
-          <ul className='link-list'>
-            <Link to='/' className='page-link'>Home</Link>
-            <Link to='/about' className='page-link'>About</Link>
-            <Link to='/blog' className='page-link'>Blog</Link>
-            <Link to='/projects' className='page-link'>Projects</Link>
-            <Link to='/contact' className='page-link'>Contact</Link>
-          </ul>
+
+        <section className='welcome-msg-container'>
+          <h3 className='welcome'>
+            Welcome!
+          </h3>
+          <h4 className='welcome-msg'>
+            My name is
+          </h4>
+            {myName}
+          <h4 className='welcome-msg'>
+            and I'm a
+          </h4>
+          <div className='typewriter' style={{padding: 10, textAlign: 'center'}}>
+            <Type />
+          </div>
         </section>
-      </nav>
-    </h1>
+      </div>
+    </div>
   )
 }
 
