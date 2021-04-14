@@ -1,8 +1,11 @@
 import React from 'react'
 
+import { IconContext } from "react-icons";
+import {FaGithub, FaLinkedin} from 'react-icons/fa';
+
 function Home() {
   return (
-    <main>
+    <main id='main-container'>
       <h2>
         Allow me to introduce myself
       </h2>
@@ -19,56 +22,44 @@ function Home() {
         I'm fluent in Web Development languages, specifically React, JavaScript, CSS, Node.js, PostgreSQL and more.
       </h4>
 
+      <br/>
+
       <h3>
         FIND ME ON
       </h3>
 
-      <ul className="home-about-social-links">
+      <ul className="social-links-list">
         <li className="social-icons">
           <a
             href="https://github.com/Dozr13"
             target="_blank"
             rel="noreferrer"
-            className="icon-colour  home-social-icons"
+            className="icon-colour home-social-icons"
           >
-            <i className="fab fa-github"></i>
+            <IconContext.Provider value={{ color: "black", size: '5em' }}>
+              <div>
+                <FaGithub />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
 
         <li className="social-icons">
           <a
-            href="https://twitter.com/Soumyajit4419"
-            target="_blank"
-            rel="noreferrer"
-            className="icon-colour  home-social-icons"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
-        </li>
-
-        <li className="social-icons">
-          <a
-            href="https://www.linkedin.com/in/soumyajit4419/"
-            target="_blank"
-            rel="noreferrer"
-            className="icon-colour  home-social-icons"
-          >
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-
-        <li className="social-icons">
-          <a
-            href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+            href="https://www.linkedin.com/in/wadejp8/"
             target="_blank"
             rel="noreferrer"
             className="icon-colour home-social-icons"
           >
-            <i className="fab fa-instagram"></i>
+            <IconContext.Provider value={{ color: "blue", size: '5em' }}>
+              <div>
+                <FaLinkedin />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
       </ul>
-
+      
 
 
     </main>

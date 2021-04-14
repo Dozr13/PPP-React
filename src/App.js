@@ -1,7 +1,4 @@
 import React from 'react'
-
-import './Components/FontAwesomeIcons/index'
-
 import Landing from './Components/Landing/Landing'
 import routes from './routes'
 import {withRouter} from "react-router-dom";

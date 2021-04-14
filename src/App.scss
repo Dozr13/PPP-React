@@ -32,3 +32,14 @@
   // justify-content: center;
   // background-color: black;
 }
+
+
+#main-container{
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67, 67, 68);
+}
