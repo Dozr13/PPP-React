@@ -1,5 +1,8 @@
 @import 'helpers/variables';
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 * {
   margin: 0;
@@ -15,7 +18,7 @@
 .App{
   height: 100vh;
   width: 100vw;
-  position: relative;
+  // position: relative;
 }
 
 .particles{
@@ -30,6 +33,15 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  font-family: 'PT Serif', serif;
+  overflow: hidden;
+}
+
+#mob-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
 }
 
 #navbar{
@@ -39,22 +51,25 @@
 }
 
 
-#main-container{
-  height: 100vh;
+#home-container{
+  height: 180vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: space-around;
+  // justify-content: space-around;
   position: relative;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   z-index: 0;
+  background-color: #000322;
+  color: #d1cfcf;
   // background-color: rgb(67, 67, 68);
 }
 
 
 #footer{
-  height: 7vh;
+  height: 5vh;
   width: 100vw;
   display: flex;
   align-items: center;

@@ -1,27 +1,67 @@
 
+#intro{
+  height: 30%;
+  margin: 1em 0 0 0;
+  overflow: hidden;
+}
 
-.text-container{
-  height: 100%;
+.intro-header{
+  height: 25%;
+  font-size: 2rem;
+  align-self: center;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+
+.intro-img{
+  height: 58%;
+  width: 58%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#about-me-container{
+  height: 58%;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.about-summary{
+  height: 43%;
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 2rem;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.skill-list{
+  height: 40%;
   width: 100%;
-  justify-content: flex-start;
-  align-items: flex-end;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
 
-.home-intro{
-  justify-self: flex-start;
-  align-self: flex-start;
-}
-
-
-
-
-.home-social-container{
+#home-social-container{
+  height: 13%;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  overflow: hidden;
 }
 
 .social-header{
-  font-size: 3rem;
+  font-size: 2.4em;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+
+.social-links{
+  margin: -5%;
+  overflow: hidden;
 }

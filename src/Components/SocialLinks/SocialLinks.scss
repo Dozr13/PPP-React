@@ -1,21 +1,26 @@
 
-// .social-container {
-  // height: 7vh;
-  // width: 100%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-//   background: #00ee11;
-// }
+.social-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
+  background-image:
+    radial-gradient(
+      #0000aa,
+      #000322
+    );
+  margin-top: 1rem;
+}
 
 a.social {
-  margin: 0 1.5rem;
+  padding: 10px;
+  margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
 }
 
 a.social:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 a.github {
