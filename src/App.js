@@ -9,7 +9,7 @@ import Footer from './Components/Footer/Footer';
 import routes from './routes';
 import {withRouter} from "react-router-dom";
 
-
+import './Reset.scss';
 import './App.scss';
 
 
