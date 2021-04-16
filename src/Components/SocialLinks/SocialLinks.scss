@@ -1,3 +1,5 @@
+@import 'helpers/variables';
+
 
 .social-container {
   width: 100%;
@@ -6,8 +8,8 @@
   // background-color: red;
   background-image:
     radial-gradient(
-      #0000aa,
-      #000322
+      $off-white,
+      $blue
     );
   margin-top: 1rem;
 }

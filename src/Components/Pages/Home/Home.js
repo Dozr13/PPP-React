@@ -1,4 +1,5 @@
 import React from 'react'
+import Landing from '../../Landing/Landing';
 
 
 import SocialLinks from '../../SocialLinks/SocialLinks'
@@ -7,6 +8,11 @@ import './Home.scss'
 
 function Home() {
   return (
+    <div>
+
+    <div className="App" style={{position: 'relative', overflow: 'hidden'}}>
+    <Landing />
+  </div>
     <main id='home-container'>
 
       <section id='intro'>
@@ -34,6 +40,7 @@ function Home() {
         </div>
       </section>
     </main>
+    </div>
   )
 }
 

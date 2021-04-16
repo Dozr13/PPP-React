@@ -21,7 +21,7 @@ function NavBar() {
   
   
   
-  const changeBackground = () => window.scrollY >= 640 ? setNavbar(true) : setNavbar(false)
+  const changeBackground = () => window.scrollY >= 40 ? setNavbar(true) : setNavbar(false)
   
 
   window.addEventListener('scroll', changeBackground)
