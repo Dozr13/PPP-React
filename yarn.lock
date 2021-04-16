@@ -4582,6 +4582,11 @@ eslint-plugin-jsx-a11y@^6.3.1:
     jsx-ast-utils "^3.1.0"
     language-tags "^1.0.5"
 
+eslint-plugin-react-hooks@^0.0.0-11b07597e:
+  version "0.0.0-11b07597e"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-0.0.0-11b07597e.tgz#cd416699645064040d596042b6b531a8405cb421"
+  integrity sha512-zX6FoKOfbrw3I9whsqlVVI8I7RIWHoX1UwV3mikN7c6TL0cACIUNeoP4sB8LusJ4MxuNqWX/Pj2bXxWcnidUgQ==
+
 eslint-plugin-react-hooks@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz#8c229c268d468956334c943bb45fc860280f5556"

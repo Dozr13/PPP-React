@@ -1,14 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {ReactComponent as Logo} from '../../Img/logo-stamp.svg'
 import Type from './Type'
 
 import Particles from 'react-particles-js';
 import particlesConfig from '../../config/particlesConfig';
 
-import NavBar from '../NavBar/NavBar';
-
-
 import './Landing.scss'
+
 
 function Landing() {
   const [navMenu, setNavMenu] = useState(false);
