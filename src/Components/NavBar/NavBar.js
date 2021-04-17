@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import {ReactComponent as Logo} from '../../Img/logo-stamp.svg'
-
+import {ReactComponent as Logo} from '../../Img/logo-stamp.svg';
 
 import useView from '../../Hooks/useView'
 
@@ -14,7 +13,14 @@ function NavBar() {
   const [click, setClick] = useState(false)
   const [navbar, setNavbar] = useState(false)
 
+  // const disableScroll = () => {
+  //   let x = window.scrollX;
+  //   let y = window.scrollY;
+  //   window.onscroll = function(){window.scrollTo(x,y)}
+  // }
   const handleClick = () => setClick(!click)
+
+
   const closeMobileMenu = () => setClick(false)
   
   
@@ -25,14 +31,22 @@ function NavBar() {
 
   const mobile = () => {
     return (
-      <nav className={navbar ? 'mob-nav active' : 'mob-nav'}>
-        <div className='menu-icon' onClick={handleClick}>
+      <div className={navbar ? 'navbar active' : 'navbar'} >
+          
+        <section className={click ? 'nav-logo-container active' : 'nav-logo-container'}>
+          <div className='nav-logo'>
+            <Logo className='brand-logo' alt='Brand Logo' />
+          </div>
+        </section>
+
+        <section className='menu-icon' onClick={handleClick}>
           <i className={click 
             ? 'fas fa-times' 
             : 'fas fa-bars'
           } 
           />
-        </div>
+        </section>
+
         <ul className={click 
           ? 'nav-menu active' 
           : 'nav-menu'
@@ -73,12 +87,11 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-
-    </nav>
+    </div>
     )
   }
-
-
+  
+  
   const desktop = () => {
     return (
       <div id='navbar'>

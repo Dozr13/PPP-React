@@ -29,6 +29,8 @@
 
 
 
+
+
 #landing{
   height: 100vh;
   width: 100vw;
@@ -41,7 +43,24 @@
 #navbar{
   height: 5.5vh;
   width: 100vw;
-  // position: relative;
+  position: relative;
+}
+
+
+#about{
+  height: 90vh;
+  width: 100vw;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-grow: 1;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  background-color: $blue;
+  color: $off-white;
 }
 
 
@@ -63,7 +82,7 @@
 
 
 #footer{
-  height: 5vh;
+  height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -71,4 +90,20 @@
   color: $white;
   padding: 1rem 0 1rem 1rem !important;
   bottom: 0 !important;
+  overflow: hidden;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!! Consider Removing?
+
+.page-logo-container{
+  height: 10vh;
+  width: 31vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-radius: 50%;
+  margin: 2% 0 0 2%;
+  background-color: $off-white;
+  padding-top: 35%;
+  opacity: 50%;
 }

@@ -1,7 +1,7 @@
 @import 'helpers/variables';
 
 
-.mob-nav{
+.navbar{
   height: 0%;
   width: 100vw;
   background-color: transparent;
@@ -16,8 +16,32 @@
   z-index: 1;
 }
 
-.mob-nav.active{
+.navbar.active{
   opacity: 1;
+}
+
+
+
+.nav-logo-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+  opacity: 0;
+}
+
+.nav-logo-container.active{
+  opacity: 1;
+}
+
+.nav-logo{
+  width: 30%;
+}
+
+.brand-logo{
+  width: 100%;
+  padding: 5rem 0 0 0;
 }
 
 // .mob-nav.active{
@@ -43,10 +67,6 @@
 // }
 
 
-// #menu-section{
-//   height: 100%;
-//   width: 70%;
-// }
 
 .menu-icon {
   display: none;
@@ -60,8 +80,6 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  // justify-content: end;
-  // margin-right: 2rem;
 }
 
 .nav-item {
@@ -85,15 +103,13 @@
   transition: all 0.2s ease-out;
 }
 
-.nav-link-mobile {
-  display: none;
-}
+// .nav-link-mobile {
+//   display: none;
+// }
 
 
 @media screen and (max-width: 960px) {
   .nav-menu {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -105,10 +121,11 @@
 
   .nav-menu.active {
     background: #000;
+    top: 0;
     left: 0;
+    padding: 5rem 0 0 0;
     opacity: 95%;
     transition: all .5s ease-in-out;
-    z-index: 5;
   }
 
   .nav-link {
@@ -147,24 +164,24 @@
     font-size: 2.1rem;
   }
 
-  .nav-link-mobile {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    background: #1888ff;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-  }
+  // .nav-link-mobile {
+  //   display: block;
+  //   text-align: center;
+  //   padding: 1.5rem;
+  //   margin: 2rem auto;
+  //   border-radius: 4px;
+  //   width: 80%;
+  //   background: #1888ff;
+  //   text-decoration: none;
+  //   color: #fff;
+  //   font-size: 1.5rem;
+  // }
 
-  .nav-link-mobile:hover {
-    background: #fff;
-    color: #1888ff;
-    transition: 250ms;
-  }
+  // .nav-link-mobile:hover {
+  //   background: #fff;
+  //   color: #1888ff;
+  //   transition: 250ms;
+  // }
 
   button {
     display: none;

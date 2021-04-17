@@ -24,16 +24,23 @@ function Footer() {
       <div className='footer-right'>
       <a href="https://github.com/Dozr13"
         className="github social-footer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
-        <FontAwesomeIcon icon={faGithub} size="2x" />
+        <FontAwesomeIcon 
+          icon={faGithub} size="2x" />
       </a>
       <a href="https://www.linkedin.com/in/wadejp8/"
         className="linkedIn social-footer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
       <a href="https://www.twitter.com/wadejp8" 
         className="twitter social-footer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
