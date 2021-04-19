@@ -13,6 +13,7 @@ function NavBar() {
   const [click, setClick] = useState(false)
   const [navbar, setNavbar] = useState(false)
 
+
   // const disableScroll = () => {
   //   let x = window.scrollX;
   //   let y = window.scrollY;
@@ -24,7 +25,7 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false)
   
   
-  const changeBackground = () => window.scrollY >= 80 ? setNavbar(true) : setNavbar(false)
+  const changeBackground = () => window.scrollY >= 40 ? setNavbar(true) : setNavbar(false)
   
 
   window.addEventListener('scroll', changeBackground)
@@ -33,10 +34,8 @@ function NavBar() {
     return (
       <div className={navbar ? 'navbar active' : 'navbar'} >
           
-        <section className={click ? 'nav-logo-container active' : 'nav-logo-container'}>
-          <div className='nav-logo'>
-            <Logo className='brand-logo' alt='Brand Logo' />
-          </div>
+        <section className='nav-logo'>
+          <Logo alt='Brand Logo' />
         </section>
 
         <section className='menu-icon' onClick={handleClick}>
@@ -51,35 +50,35 @@ function NavBar() {
           ? 'nav-menu active' 
           : 'nav-menu'
         }>
-          <li className='nav-item'>
+          <li className='nav-home'>
             <Link to='/' 
               className='nav-link' 
               onClick={closeMobileMenu}>
                 <i className="fas fa-home"> Home</i>
             </Link>
           </li>
-          <li className='nav-item'>
+          <li className='nav-about'>
             <Link to='/about' 
               className='nav-link' 
               onClick={closeMobileMenu}>
                 <i className="fas fa-info-circle"> About</i>
             </Link>
           </li>            
-          <li className='nav-item'>
+          <li className='nav-projects'>
             <Link to='/projects' 
               className='nav-link' 
               onClick={closeMobileMenu}>
                 <i className="fas fa-project-diagram"> Projects</i>
             </Link>
           </li>            
-          <li className='nav-item'>
+          {/* <li className='nav-blog'>
             <Link to='/blog' 
               className='nav-link' 
               onClick={closeMobileMenu}>
                 <i className="fab fa-blogger-b"> Blog</i>
             </Link>
-          </li>            
-          <li className='nav-item'>
+          </li>             */}
+          <li className='nav-contact'>
             <Link to='/contact' 
               className='nav-link' 
               onClick={closeMobileMenu}>

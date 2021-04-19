@@ -5,11 +5,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  // background-color: red;
   background-image:
     radial-gradient(
-      $off-white,
-      $blue
+      $light-gray,
+      $dark-gray
     );
   margin-top: 1rem;
 }

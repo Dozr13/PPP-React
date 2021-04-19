@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import Landing from '../../Landing/Landing';
 
 
@@ -7,6 +7,12 @@ import SocialLinks from '../../SocialLinks/SocialLinks'
 import './Home.scss'
 
 function Home() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+
+
   return (
     <div>
       <div className="App" style={{position: 'relative', overflow: 'hidden'}}>
@@ -15,8 +21,8 @@ function Home() {
     <main id='home-container'>
 
       <section id='intro'>
-        <h2 className='intro-header'>Allow me to introduce myself</h2>
-        <img className='intro-img' src={process.env.PUBLIC_URL + '/img/self.jpeg'} />
+        <h2 className='page-title text-margin'>Allow me to introduce myself</h2>
+        <img className='intro-img' src={process.env.PUBLIC_URL + '/img/self.jpeg'} alt='Wade Pate' />
       </section>
 
       <section id='about-me-container'>
@@ -31,7 +37,7 @@ function Home() {
       </section>
 
       <section id='home-social-container'>
-        <h3 className='social-header'>
+        <h3 className='social-header underline'>
           FIND ME ON
         </h3>
         <div className='social-links'>

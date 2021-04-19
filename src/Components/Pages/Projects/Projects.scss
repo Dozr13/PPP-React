@@ -1,0 +1,37 @@
+@import 'helpers/variables';
+
+
+
+.project-list{
+  padding: 1rem .5rem;
+}
+
+.project-container{
+  height: 80%;
+  width: 90vw;
+  background-color: $off-white;
+  border: 3px solid $black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.project-title{
+  height: 30%;
+
+  font-size: 3rem;
+  color: $blue;
+}
+
+.project-summary{
+  color: $black;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.project-image{
+  max-height: 100%;
+  max-width: 100%;
+  border: 2px solid $black;
+  object-fit: contain;
+}

@@ -1,15 +1,77 @@
+@import 'helpers/variables';
 
-.page-logo{
-  // margin-top: 1rem;
-}
 
 #about-container{
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 5rem;
+  padding-bottom: 4rem;
 }
 
-.about-title{
-  font-size: 3rem;
+
+
+// .about-title{
+//   font-size: 2.9rem;
+//   font-weight: 600;
+//   border: 3px solid $black;
+//   background-color: $off-white;
+//   color: $black;
+//   margin: 4.5rem 0 1rem 0;
+// }
+
+.page-description{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 1.3rem 1rem 1.3rem;
+}
+
+.about-sub{
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: $blue;
+  background-color: $light-gray;
+  margin: 1.5rem 0 .8rem 0;
+}
+
+.text-description{
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 2rem;
+  overflow: hidden;
+  padding: 0 1.3rem;
+}
+
+.current-description{
+  line-height: 2.5rem;
+  font-size: 1.5em;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 0 1.3rem;
+}
+
+.goal-list{
+  width: 90%;
+  padding: 1rem;
+  color: $blue;
+  background-color: $light-gray;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  border-bottom: 3px solid $black;
+  margin: 0 auto;
+}
+
+hr{
+  margin-top: 1rem;
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.goal{
+  margin-top: 1rem;
 }

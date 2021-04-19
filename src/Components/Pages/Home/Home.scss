@@ -2,24 +2,18 @@
 
 
 #intro{
-  height: 30%;
+  height: 35%;
   margin: 1em 0 0 0;
   overflow: hidden;
 }
 
-.intro-header{
-  height: 25%;
-  font-size: 2rem;
-  align-self: center;
-  padding: 1rem;
-  margin-bottom: .5rem;
-  overflow: hidden;
-}
 
 .intro-img{
   height: 58%;
   width: 58%;
+  border: .3rem solid $blue;
   border-radius: 50%;
+  margin: 1rem;
   overflow: hidden;
 }
 
@@ -30,11 +24,11 @@
 }
 
 .about-summary{
-  height: 50%;
+  height: 52%;
   font-size: 1.5rem;
   font-weight: 550;
   line-height: 2rem;
-  padding: 1rem 0;
+  padding: .1rem 0;
   overflow: hidden;
 }
 
@@ -44,7 +38,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   overflow: hidden;
 }
 
@@ -52,6 +46,7 @@
 #home-social-container{
   height: 13%;
   width: 100%;
+  padding-top: 1rem;
   position: relative;
   bottom: 0;
   overflow: hidden;
@@ -59,11 +54,12 @@
 
 .social-header{
   font-size: 2.4em;
-  margin-bottom: .5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: $off-white;
   overflow: hidden;
 }
 
 .social-links{
-  margin: -5%;
   overflow: hidden;
 }

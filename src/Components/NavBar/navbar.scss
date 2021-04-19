@@ -1,72 +1,107 @@
 @import 'helpers/variables';
 
 
+// .navbar{
+//   height: 0%;
+//   width: 100vw;
+//   background-color: transparent;
+//   position: fixed;
+//   top: 0;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   padding: .5rem;
+//   overflow: visible;
+//   opacity: 0;
+//   z-index: 1;
+// }
+
+// .navbar.active{
+//   opacity: 1;
+// }
+
 .navbar{
-  height: 0%;
   width: 100vw;
-  background-color: transparent;
   position: fixed;
   top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: .5rem;
-  overflow: visible;
-  opacity: 0;
+  background-color: transparent;
   z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0em 38em;
+  grid-template-areas:
+    "nav-logo menu-icon"
+    "home home"
+    "about about"
+    "projects projects"
+    "blog blog"
+    "contact contact";
 }
 
 .navbar.active{
   opacity: 1;
 }
 
-
-
-.nav-logo-container{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: 2;
-  opacity: 0;
-}
-
-.nav-logo-container.active{
-  opacity: 1;
-}
-
 .nav-logo{
-  width: 30%;
+  grid-area: nav-logo;
+  opacity: 1;
+  z-index: 123;
 }
 
-.brand-logo{
-  width: 100%;
-  padding: 5rem 0 0 0;
+.menu-icon{
+  grid-area: 'menu-icon';
 }
 
-// .mob-nav.active{
-//   background-image: linear-gradient(to left, $blue, $white);
-//   border-bottom: 3px solid $black;
-// }
+.nav-home{
+  grid-area: home;
+  font-size: 1.7rem;
+}
+
+.nav-about{
+  grid-area: about;
+  font-size: 1.7rem;
+}
+
+.nav-projects{
+  grid-area: projects;
+  font-size: 1.7rem;
+}
+
+.nav-blog{
+  grid-area: blog;
+  font-size: 1.7rem;
+}
+
+.nav-contact{
+  grid-area: contact;
+  font-size: 1.7rem;
+}
 
 
-// #mob-nav-logo-container{
-//   height: 80%;
-//   width: 10%;
-// }
-
-// .mob-nav-logo{
-//   opacity: 0;
-//   height: 5rem;
-//   width: 5rem;
-// }
-
-// .mob-nav-logo.active{
-//   opacity: 1;
+// .nav-logo-container{
+//   width: 100%;
 //   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   z-index: 1;
+//   opacity: 0;
 // }
 
+// .nav-logo-container.active{
+//   opacity: 1;
+//   z-index: 1;
+// }
 
+// .nav-logo{
+//   width: 30%;
+// }
+
+// .brand-logo{
+//   width: 100%;
+//   padding: 5rem 0 0 0;
+// }
 
 .menu-icon {
   display: none;
@@ -183,7 +218,7 @@
   //   transition: 250ms;
   // }
 
-  button {
-    display: none;
-  }
+  // button {
+  //   display: none;
+  // }
 }

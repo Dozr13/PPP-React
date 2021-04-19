@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {ReactComponent as Logo} from '../../Img/logo-stamp.svg'
 import Type from './Type'
 
@@ -9,9 +9,9 @@ import './Landing.scss'
 
 
 function Landing() {
-  const [navMenu, setNavMenu] = useState(false);
+  // const [navMenu, setNavMenu] = useState(false);
 
-  const myName = <p style={{color: '#043363', height: '25%', marginTop: '-10px', fontSize: '4rem', fontWeight: 700, textAlign: 'center', overflow: 'hidden'}}>Wade Pate</p>;
+  const myName = <p style={{color: '#043363', height: '25%', fontSize: '4rem', fontWeight: 700, textAlign: 'center', overflow: 'hidden'}}>Wade Pate</p>;
 
   return (
     <div id='landing'>
@@ -34,7 +34,7 @@ function Landing() {
         <h4 className='welcome-msg'>
           and I'm a
         </h4>
-        <div className='typewriter' style={{padding: 10, textAlign: 'center'}}>
+        <div className='typewriter' style={{padding: 10, textAlign: 'center', lineHeight: '2.5rem'}}>
           <Type />
         </div>
       </section>
