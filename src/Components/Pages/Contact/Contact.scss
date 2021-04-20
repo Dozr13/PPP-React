@@ -16,7 +16,7 @@
 }
 
 .form-flex{
-  height: 90%;
+  height: 85%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,9 +25,16 @@
 }
 
 .form-input{
-  height: 8%;
+  height: 7%;
   width: 70%;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-textarea{
+  height: 13%;
+  width: 70%;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -40,5 +47,5 @@
   font-weight: 600;
   color: $light-gray;
   background-color: $blue;
-  margin: .5rem 0 0 0;
+  margin: .3rem 0 0 0;
 }

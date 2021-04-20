@@ -13,7 +13,7 @@ import './Footer.scss'
 
 function Footer() {
   const {width} = useView();
-  const breakpoint = 408;
+  const breakpoint = 960;
 
   let date = new Date()
   let year = date.getFullYear()
@@ -64,7 +64,7 @@ function Footer() {
     return (
       <footer id='footer'>
         <div className='footer-left'>
-          <h3>
+          <h3 className='footer-text'>
             Designed and Developed by 
             <strong> Wade Pate </strong>
             and Pate's Programming

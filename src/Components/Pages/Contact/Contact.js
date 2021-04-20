@@ -1,4 +1,6 @@
-import React, {useState, useLayoutEffect} from 'react'
+import React, {useLayoutEffect} from 'react';
+import emailjs from 'emailjs-com'
+import apiKeys from '../../../apikeys'
 
 import './Contact.scss'
 
@@ -9,14 +11,17 @@ function Contact() {
 });
 
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [sub, setSub] = useState('')
-  const [msg, setMsg] = useState('')
 
-
-
-
+  const onSubmit=(e)=>{
+  e.preventDefault()// Prevents default refresh by the browser
+  emailjs.sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+  .then(result => {
+  alert(`Message Sent, I'll get back to you shortly`, result.text);
+  },
+  error => {
+  alert( 'An error occurred, Please try again',error.text)
+  })
+  }
 
   return (
     <div id='contact'>
@@ -26,37 +31,13 @@ function Contact() {
         </div>
 
         <section className='contact-form'>
-          <form className='form-flex'>
-            <input 
-              className='form-input' 
-              placeholder='Name' 
-              type='text' 
-              onChange={e => setName({name: e.target.value})} 
-              />
-            <input 
-              className='form-input' 
-              placeholder='Email' 
-              type='text' 
-              onChange={e => setEmail({email: e.target.value})} 
-              />
-            <input 
-              className='form-input' 
-              placeholder='Subject' 
-              type='text' 
-              onChange={e => setSub({sub: e.target.value})} 
-            />
-            <input 
-              className='form-input' 
-              placeholder='Message' 
-              type='text' 
-              onChange={e => setMsg({msg: e.target.value})} 
-              />
-            <button 
-              className='submit-btn' 
-              type='submit'
-              >
-              Submit
-            </button>
+          <form className='form-flex' onSubmit={onSubmit}>
+            <input className='form-input' name='name' type="text" placeholder="Your Name" />
+            <input className='form-input' name='email' type="text" placeholder="Email" />
+            <input className='form-input' name='phone' type="tel" placeholder="Mobile number" />
+            <input className='form-input' name='subject' type="text" placeholder="Subject" />
+            <textarea className='form-textarea' name='message' placeholder='Message' />
+            <input className='submit-btn' type="submit" />
           </form>
         </section>
       </section>

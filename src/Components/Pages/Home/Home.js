@@ -22,7 +22,9 @@ function Home() {
 
       <section id='intro'>
         <h2 className='page-title text-margin'>Allow me to introduce myself</h2>
-        <img className='intro-img' src={process.env.PUBLIC_URL + '/img/self.jpeg'} alt='Wade Pate' />
+        <div className='img-container'>
+          <img className='intro-img' src={process.env.PUBLIC_URL + '/img/self.jpeg'} alt='Wade Pate' />
+        </div>
       </section>
 
       <section id='about-me-container'>

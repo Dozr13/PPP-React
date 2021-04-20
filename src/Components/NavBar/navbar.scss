@@ -44,10 +44,13 @@
   opacity: 1;
 }
 
+// ! Edit
 .nav-logo{
+  height: 50%;
+  object-fit: cover;
   grid-area: nav-logo;
-  opacity: 1;
-  z-index: 123;
+  opacity: 0;
+  // z-index: 1;
 }
 
 .menu-icon{
@@ -117,12 +120,6 @@
   text-align: center;
 }
 
-.nav-item {
-  height: 5.8rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-}
 
 
 .nav-link {
@@ -144,7 +141,7 @@
 // }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
   .nav-menu {
     display: flex;
     flex-direction: column;

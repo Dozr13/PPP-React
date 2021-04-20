@@ -4,21 +4,16 @@ import {ReactComponent as Logo} from '../../Img/logo-stamp.svg';
 
 import useView from '../../Hooks/useView'
 
-import './NavBar.scss'
+import './Navbar.scss'
 
-function NavBar() {
+function Navbar() {
   const {width} = useView();
-  const breakpoint = 408;
+  const breakpoint = 960;
 
   const [click, setClick] = useState(false)
   const [navbar, setNavbar] = useState(false)
 
 
-  // const disableScroll = () => {
-  //   let x = window.scrollX;
-  //   let y = window.scrollY;
-  //   window.onscroll = function(){window.scrollTo(x,y)}
-  // }
   const handleClick = () => setClick(!click)
 
 
@@ -34,16 +29,16 @@ function NavBar() {
     return (
       <div className={navbar ? 'navbar active' : 'navbar'} >
           
-        <section className='nav-logo'>
-          <Logo alt='Brand Logo' />
-        </section>
-
         <section className='menu-icon' onClick={handleClick}>
           <i className={click 
             ? 'fas fa-times' 
             : 'fas fa-bars'
           } 
           />
+        </section>
+
+        <section className='nav-logo'>
+          <Logo alt='Brand Logo' />
         </section>
 
         <ul className={click 
@@ -112,4 +107,4 @@ function NavBar() {
   return width < breakpoint ? mobile() : desktop()
 }
 
-export default NavBar
+export default Navbar
