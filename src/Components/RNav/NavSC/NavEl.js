@@ -9,11 +9,11 @@ export const Nav = styled.nav`
   top: 0;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 1.5rem;
 
   margin: 1.5rem 0 0 0;
-  padding: .5rem calc((100vw - 1000px) / 2);
+  padding: .5rem calc((100vw - 1300px) / 2);
   z-index: 100;
 `
 
