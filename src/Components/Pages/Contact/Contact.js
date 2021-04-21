@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react';
 import emailjs from 'emailjs-com'
-import apiKeys from '../../../.secret/apikeys'
+import apiKeys from '../../../secret/apikeys'
 
 import './Contact.scss'
 
