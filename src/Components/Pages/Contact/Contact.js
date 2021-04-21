@@ -12,16 +12,16 @@ function Contact() {
 
 
 
-  const onSubmit=(e)=>{
-  e.preventDefault()// Prevents default refresh by the browser
+  const onSubmit = (e) => {
+  e.preventDefault()
   emailjs.sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
-  .then(result => {
+  .then((result) => {
   alert(`Message Sent, I'll get back to you shortly`, result.text);
   },
   error => {
-  alert( 'An error occurred, Please try again',error.text)
+  alert( 'An error occurred, Please try again', error.text)
   })
-  }
+}
 
   return (
     <div id='contact'>
