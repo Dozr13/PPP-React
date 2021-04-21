@@ -35,6 +35,9 @@ function Home() {
         <p className='skill-list'>
           I'm fluent in Web Development languages, specifically React, JavaScript, CSS, Node.js, PostgreSQL, Redux, and Context.
           I'm currently focusing on adding C# as well as Java to my mental db.
+          <br/>
+          <br/>
+          I'm also quite knowledgeable when it comes to Adobe Photoshop as well as Illustrator and I have Creative Cloud so I'm willing to learn any other skills.
         </p>
       </section>
 
