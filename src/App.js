@@ -15,9 +15,9 @@ import './App.scss';
 const App = () => (
     <ViewProvider>
       <Navbar />
-        <Router>
+        {/* <Router> */}
           {routes}
-        </Router>
+        {/* </Router> */}
       <Footer />
     </ViewProvider>
   );
