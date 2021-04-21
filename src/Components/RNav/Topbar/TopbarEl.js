@@ -42,7 +42,7 @@ export const TopbarMenu = styled.ul`
   grid-template-rows: repeat(4, 150px);
   text-align: center;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1200px){
     grid-template-rows: repeat(4, 100px);
   }
 `
@@ -60,7 +60,8 @@ export const TopbarLink = styled(Link)`
   cursor: pointer;
 
   &:hover{
-    color: #01bf71;
+    font-size: 2rem;
+    color: #d1cfcf;
     transition: .2s ease-in-out;
   }
 `

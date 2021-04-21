@@ -6,30 +6,33 @@ const NavSC = ({toggle}) => {
   return (
     <>
       <Nav>
-
         <Bars onClick={toggle} />
         <NavMenu>
-          <NavLink to='/' activeStyle={{
+          <NavLink to='/' exact activeStyle={{
             fontWeight: 'bold',
-            color: 'blue'
+            fontSize: '2.3rem',
+            color: '#042649'
           }}>
             Home
           </NavLink>
           <NavLink to='/about' activeStyle={{
             fontWeight: 'bold',
-            color: 'blue'
+            fontSize: '2.3rem',
+            color: '#042649'
           }}>
             About
           </NavLink>
           <NavLink to='/projects' activeStyle={{
             fontWeight: 'bold',
-            color: 'blue'
+            fontSize: '2.3rem',
+            color: '#042649'
           }}>
             Projects
           </NavLink>
           <NavLink to='/contact' activeStyle={{
             fontWeight: 'bold',
-            color: 'blue'
+            fontSize: '2.3rem',
+            color: '#042649'
           }}>
             Contact
           </NavLink>
