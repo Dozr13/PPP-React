@@ -52,6 +52,23 @@
   padding: 0 1.3rem;
 }
 
+.resume-container{
+  height: 5vh;
+  width: 100vw;
+}
+
+.resume{
+  height: 100%;
+  width: 50%;
+  color: white;
+  font-size: 2rem;
+  background-color: $blue;
+}
+
+.resume-icon{
+  color: red;
+}
+
 .goal-list{
   width: 90%;
   padding: 1rem;

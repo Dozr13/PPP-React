@@ -43,33 +43,68 @@
 }
 
 
-#home-social-container{
-  height: 13%;
-  width: 100%;
-  padding-top: 1rem;
-  position: relative;
-  bottom: 0;
+#home-resume-container{
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
-.social-header{
+.resume-header{
   font-size: 2.4em;
   font-weight: 700;
   line-height: 3rem;
   color: $off-white;
+  margin: 1rem 0 2rem 0;
   overflow: hidden;
 }
 
-.social-links{
-  overflow: hidden;
-}
-
-
-
-@media screen and (min-width: 960px) {
-  .intro-img{
-    height: 80vh;
-    width: 30vw;
+.resume-link{
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  background-image:
+  radial-gradient(
+    $light-gray,
+    $dark-gray
+    );
+    border-radius: 50px;
+    padding: 1rem 0 1rem 0;
+  }
+  
+  #home-social-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    position: relative;
+    bottom: 0;
+    margin: 0 0 2.5rem 0;
+    overflow: hidden;
+  }
+  
+  .social-header{
+    font-size: 2.4em;
+    font-weight: 700;
+    line-height: 3rem;
+    color: $off-white;
+    overflow: hidden;
+  }
+  
+  .social-links{
+    overflow: hidden;
+  }
+  
+  
+  @media screen and (min-width: 960px) {
+    .intro-img{
+      height: 20vh;
+      width: 30vw;
   }
 
   #about-me-container{
@@ -96,7 +131,7 @@
   }
 
   #home-social-container{
-    height: 13%;
+    // height: 20%;
     width: 100%;
     padding-top: 1rem;
     position: relative;

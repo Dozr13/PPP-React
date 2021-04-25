@@ -1,5 +1,6 @@
 import React, {useLayoutEffect} from 'react'
 import Landing from '../../Landing/Landing';
+import {FaFilePdf} from "react-icons/fa";
 
 
 import SocialLinks from '../../SocialLinks/SocialLinks'
@@ -39,6 +40,20 @@ function Home() {
           <br/>
           I'm also quite knowledgeable when it comes to Adobe Photoshop as well as Illustrator and I have Creative Cloud so I'm willing to learn any other skills.
         </p>
+      </section>
+
+      <section id='home-resume-container'>
+        <h3 className='resume-header underline'>
+          Check out my Resume
+        </h3>
+        <div className='resume-link'>
+          <a href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
+          target='_blank'
+          rel='noopener noreferrer'
+          >
+            <FaFilePdf color='white' size='3.5em' />
+          </a>
+       </div>
       </section>
 
       <section id='home-social-container'>

@@ -1,4 +1,5 @@
 import React, {useLayoutEffect} from 'react'
+import {GrDocumentText} from 'react-icons/gr'
 
 import './About.scss'
 
@@ -29,6 +30,18 @@ function About() {
           <br/>
           I completed DevMountain boot camp on April 2nd, 2021 and I'm eager to put all of my verified skills into action and continue gaining incredible knowledge in the industry which I truly love!
         </p>
+        <br/>
+        <section className='resume-container'>
+          <a 
+            className='resume'
+            href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Checkout my resume!
+            <GrDocumentText className='resume-icon' />
+          </a>
+        </section>
         <h3 className='page-title'>
           Goals
         </h3>

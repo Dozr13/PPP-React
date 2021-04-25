@@ -2,7 +2,7 @@
 
 
 .social-container {
-  width: 100%;
+  min-width: 100%;
   justify-content: center;
   align-items: center;
   background-image:
@@ -10,6 +10,7 @@
       $light-gray,
       $dark-gray
     );
+    border-radius: 50px;
   margin-top: 1rem;
 }
 
@@ -34,4 +35,17 @@ a.linkedIn {
 
 a.twitter {
   color: #49a1eb;
+}
+
+
+a.soc-resume{
+  color: white;
+}
+
+@media screen and (min-width: 960px) {
+  .social-container{
+    width: 50%;
+  }
+
+  
 }
