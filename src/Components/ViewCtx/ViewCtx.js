@@ -21,10 +21,10 @@ const ViewProvider = ({children}) => {
   )
 };
 
-const useView = () => {
-  const {width} = useContext(ViewCtx);
-  return {width};
-};
+// const useView = () => {
+//   const {width} = useContext(ViewCtx);
+//   return {width};
+// };
 
 
 export default ViewProvider

@@ -43,14 +43,60 @@
 }
 
 
+// #get-to-know-me{
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   // margin: 0 auto;
+//   margin-top: 1rem;
+//   margin-bottom: 3rem;
+// }
+
+
+#home-social-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 0;
+  margin: 0 0 1.3rem 0;
+  overflow: hidden;
+}
+
+.social-header{
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 3rem;
+  color: $off-white;
+  overflow: hidden;
+}
+
+.social-links{
+  border-radius: 50px;
+  overflow: hidden;
+}
+
 #home-resume-container{
-  margin: 2rem 0 1rem 0;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 2.5rem 0 3rem 0;
   overflow: hidden;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 .resume-header{
@@ -58,59 +104,34 @@
   font-weight: 700;
   line-height: 3rem;
   color: $off-white;
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 .7rem 0;
   overflow: hidden;
 }
 
 .resume-link{
-  width: 20%;
+  min-width: 80%;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
   background-image:
   radial-gradient(
     $light-gray,
     $dark-gray
     );
-    border-radius: 50px;
-    padding: 1rem 0 1rem 0;
-  }
-  
-  #home-social-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    position: relative;
-    bottom: 0;
-    margin: 0 0 2.5rem 0;
-    overflow: hidden;
-  }
-  
-  .social-header{
-    font-size: 2.4em;
-    font-weight: 700;
-    line-height: 3rem;
-    color: $off-white;
-    overflow: hidden;
-  }
-  
-  .social-links{
-    overflow: hidden;
-  }
-  
-  
-  @media screen and (min-width: 960px) {
-    .intro-img{
-      height: 20vh;
-      width: 30vw;
-  }
+  padding: .8rem 1rem .8rem 1rem;
+}
 
+
+@media screen and (min-width: 768px) {
+  .intro-img{
+    height: 35vh;
+    width: 39vw;
+  }
+  
   #about-me-container{
     margin: 0 3rem;
   }
-
+  
   .about-summary{
     height: 52%;
     font-size: 2.5rem;
@@ -130,9 +151,18 @@
     overflow: hidden;
   }
 
-  #home-social-container{
-    // height: 20%;
+  #get-to-know-me{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #home-social-container{
+    width: 40%;
     padding-top: 1rem;
     position: relative;
     bottom: 0;
@@ -142,19 +172,85 @@
     overflow: hidden;
   }
 
-  .social-links{
-    width: 50%;
-    border-radius: 20%;
+  #home-resume-container{
+    width: 38%;
+    // margin: 1rem 0 1rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
+
+
+  .social-links{
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .resume-header{
+    margin: 0 0 .5rem 0;
+  }
+
+  .resume-link{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    }
 }
 
+
+@media screen and (min-width: 1024px) {
+
+  .intro-img{
+    height: 45vh;
+    width: 37vw;
+  }
+
+  #get-to-know-me{
+    width: 100%;
+  }
+
+  #home-social-container{
+    width: 50%;
+  }
+
+  #home-resume-container{
+    width: 40%;
+  }
+
+  .social-links{
+    width: 80%;
+  }
+}
 
 
 @media screen and (min-width: 1200px) {
 
   .intro-img{
-    height: 60vh;
-    width: 30vw;
+    height: 49vh;
+    width: 25vw;
+  }
+
+  #get-to-know-me{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: .5rem;
+  }
+
+  #home-social-container{
+    width: 30%;
+  }
+
+  #home-resume-container{
+    width: 30%;
+  }
+
+  .social-links{
+    width: 70%;
+    border-radius: 200px;
   }
 
 }

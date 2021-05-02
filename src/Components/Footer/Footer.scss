@@ -1,27 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
+span{
+  overflow: hidden;
+}
+
 .footer-left{
-  min-height: 100%;
+  height: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Crimson Text', serif;
-  line-height: 1rem;
+  line-height: 1.3rem;
   overflow: hidden;
 }
 
 .footer-text{
-  overflow: hidden;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  line-height: 2.1rem;
+  line-height: 1.7rem;
+  overflow-y: hidden;
 }
 
 .footer-mid{
   text-align: center;
   font-family: 'Crimson Text', serif;
-  font-size: 1.8rem;
   overflow: hidden;
 }
 
@@ -53,3 +56,5 @@ a.linkedIn {
 a.twitter {
   color: #49a1eb;
 }
+
+

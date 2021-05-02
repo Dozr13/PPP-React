@@ -1,5 +1,6 @@
 import React, {useLayoutEffect} from 'react'
-import {GrDocumentText} from 'react-icons/gr'
+import {FaFilePdf} from "react-icons/fa";
+
 
 import './About.scss'
 
@@ -18,7 +19,8 @@ function About() {
         </div>
 
       <br/>
-        <p className='current-description'>
+
+        <p className='text'>
           I'm a Web Developer that absolutely loves learning new things, I'm extremely dedicated to being the best me in everything I do and strive to help others. 
           <br/>
           <br/>
@@ -31,22 +33,26 @@ function About() {
           I completed DevMountain boot camp on April 2nd, 2021 and I'm eager to put all of my verified skills into action and continue gaining incredible knowledge in the industry which I truly love!
         </p>
         <br/>
-        <section className='resume-container'>
-          <a 
-            className='resume'
-            href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
+
+        <section id='about-resume-container'>
+          <a href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
-          >
-            Checkout my resume!
-            <GrDocumentText className='resume-icon' />
+          > 
+            <h3 className='about-resume-header'>
+              Click here to view my Resume
+            </h3>
+            <div className='about-resume-link'>
+              <FaFilePdf color='white' size='2.5em' />
+            </div>
           </a>
         </section>
+
         <h3 className='page-title'>
           Goals
         </h3>
       <br/>
-        <p className='text-description'>
+        <p className='text'>
           Setting goals is a key towards further development in ones self.
         </p>
       <br/>

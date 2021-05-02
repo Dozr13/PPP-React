@@ -35,33 +35,35 @@ function Home() {
         </p>
         <p className='skill-list'>
           I'm fluent in Web Development languages, specifically React, JavaScript, CSS, Node.js, PostgreSQL, Redux, and Context.
-          I'm currently focusing on adding C# as well as Java to my mental db.
+          I'm currently focusing on adding C# as well as Java to my mental database.
           <br/>
           <br/>
           I'm also quite knowledgeable when it comes to Adobe Photoshop as well as Illustrator and I have Creative Cloud so I'm willing to learn any other skills.
         </p>
       </section>
 
-      <section id='home-resume-container'>
-        <h3 className='resume-header underline'>
-          Check out my Resume
-        </h3>
-        <div className='resume-link'>
-          <a href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
-          target='_blank'
-          rel='noopener noreferrer'
-          >
-            <FaFilePdf color='white' size='3.5em' />
-          </a>
-       </div>
-      </section>
+      <section id='get-to-know-me'>
+        <div id='home-social-container'>
+          <h3 className='social-header underline'>
+            Find me on
+          </h3>
+          <div className='social-links'>
+            <SocialLinks />
+          </div>
+        </div>
 
-      <section id='home-social-container'>
-        <h3 className='social-header underline'>
-          FIND ME ON
-        </h3>
-        <div className='social-links'>
-          <SocialLinks />
+        <div id='home-resume-container'>
+          <a href='https://docs.google.com/document/d/1vPKxhWEvZaZPhgv4o_l1R4xF3BZ2F7BKPkTJD4-pz38/edit?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'
+          > 
+            <h3 className='resume-header underline'>
+              View my Resume
+            </h3>
+            <div className='resume-link'>
+              <FaFilePdf color='white' size='2.5em' />
+            </div>
+          </a>
         </div>
       </section>
     </main>

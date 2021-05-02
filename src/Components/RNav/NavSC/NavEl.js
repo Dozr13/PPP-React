@@ -10,8 +10,7 @@ export const Nav = styled.nav`
   height: 100px;
   display: flex;
   justify-content: flex-end;
-  font-size: 1.5rem;
-
+  font-size: 1.3rem;
   margin: 1.7rem 0 0 0;
   padding: .5rem;
   z-index: 100;

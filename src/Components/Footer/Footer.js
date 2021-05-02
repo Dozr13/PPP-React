@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -66,7 +66,7 @@ function Footer() {
   const desktop = () => {
     return (
       <footer id='footer'>
-        <div className='footer-left'>
+        <div className='footer-left' style={{overflow: 'hidden'}}>
           <span>Copyright &#169; {year} Pate's Programming</span>
         </div>
         <div className='footer-mid'>
