@@ -9,50 +9,57 @@
 
 
 .intro-img{
-  height: 58%;
-  width: 58%;
+  height: 80%;
+  width: 80%;
   border: .3rem solid $blue;
   border-radius: 50%;
   margin: 1rem;
   overflow: hidden;
 }
 
-#about-me-container{
+#intro-container{
   height: 58%;
   padding: 0 1rem;
   overflow: hidden;
 }
 
-.about-summary{
-  height: 52%;
-  font-size: 1.5rem;
-  font-weight: 550;
-  line-height: 2rem;
-  padding: .1rem 0;
-  overflow: hidden;
-}
-
-.skill-list{
-  height: 50%;
-  width: 100%;
-  font-size: 1.5rem;
+.intro-text{
+  font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2rem;
-  padding: 1rem 0;
+  line-height: 2.3rem;
   overflow: hidden;
 }
 
 
-// #get-to-know-me{
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   align-items: center;
-//   // margin: 0 auto;
-//   margin-top: 1rem;
-//   margin-bottom: 3rem;
+// .about-summary{
+//   height: 52%;
+//   font-size: 1.5rem;
+//   font-weight: 550;
+//   line-height: 2rem;
+//   padding: .1rem 0;
+//   overflow: hidden;
 // }
+
+// .skill-list{
+//   height: 50%;
+//   width: 100%;
+//   font-size: 1.5rem;
+//   font-weight: 500;
+//   line-height: 2rem;
+//   padding: 1rem 0;
+//   overflow: hidden;
+// }
+
+
+#get-to-know-me{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  // margin: 0 auto;
+  margin: 1rem 0;
+}
 
 
 #home-social-container{
@@ -61,34 +68,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
-  position: relative;
-  bottom: 0;
-  margin: 0 0 1.3rem 0;
+  // padding-top: 1rem;
+  // position: relative;
+  // bottom: 0;
   overflow: hidden;
 }
 
-.social-header{
-  font-size: 2.4em;
+.sub-header{
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 2.9rem;
   color: $off-white;
+  margin-bottom: .5rem;
   overflow: hidden;
 }
 
 .social-links{
+  min-width: 90%;
   border-radius: 50px;
   overflow: hidden;
 }
 
 #home-resume-container{
   width: 100%;
-  margin: 1rem 0 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
   margin: 2.5rem 0 3rem 0;
   overflow: hidden;
     a{
@@ -99,17 +105,8 @@
     }
 }
 
-.resume-header{
-  font-size: 2.4em;
-  font-weight: 700;
-  line-height: 3rem;
-  color: $off-white;
-  margin: 0 0 .7rem 0;
-  overflow: hidden;
-}
-
 .resume-link{
-  min-width: 80%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
@@ -124,36 +121,42 @@
 
 @media screen and (min-width: 768px) {
   .intro-img{
-    height: 35vh;
-    width: 39vw;
+    height: 50%;
+    width: 50%;
+  }
+
+  .intro-text{
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   
   #about-me-container{
     margin: 0 3rem;
   }
   
-  .about-summary{
-    height: 52%;
-    font-size: 2.5rem;
-    font-weight: 550;
-    line-height: 3.5rem;
-    padding: 1rem 0;
-    overflow: hidden;
-  }
+  // .about-summary{
+  //   height: 52%;
+  //   font-size: 2.5rem;
+  //   font-weight: 550;
+  //   line-height: 3.5rem;
+  //   padding: 1rem 0;
+  //   overflow: hidden;
+  // }
   
-  .skill-list{
-    height: 50%;
-    width: 100%;
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 3.5rem;
-    padding: 2rem 0;
-    overflow: hidden;
-  }
+  // .skill-list{
+  //   height: 50%;
+  //   width: 100%;
+  //   font-size: 2.5rem;
+  //   font-weight: 500;
+  //   line-height: 3.5rem;
+  //   padding: 2rem 0;
+  //   overflow: hidden;
+  // }
 
   #get-to-know-me{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     // margin: 0 auto;
@@ -163,39 +166,31 @@
 
   #home-social-container{
     width: 40%;
-    padding-top: 1rem;
-    position: relative;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // position: relative;
+    // bottom: 0;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     overflow: hidden;
+    // padding-top: 1rem;
   }
-
-  #home-resume-container{
-    width: 38%;
-    // margin: 1rem 0 1rem 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-  }
-
 
   .social-links{
     width: 100%;
     border-radius: 50px;
   }
 
-  .resume-header{
-    margin: 0 0 .5rem 0;
+  #home-resume-container{
+    width: 40%;
+    // display: flex;
+    // flex-direction: column;
+    overflow: hidden;
+    // padding-top: 1rem;
   }
 
+
   .resume-link{
-    width: 50%;
+    width: 95%;
     justify-content: center;
     align-items: center;
     }
@@ -203,41 +198,15 @@
 
 
 @media screen and (min-width: 1024px) {
-
   .intro-img{
-    height: 45vh;
-    width: 37vw;
-  }
-
-  #get-to-know-me{
-    width: 100%;
-  }
-
-  #home-social-container{
-    width: 50%;
-  }
-
-  #home-resume-container{
-    width: 40%;
-  }
-
-  .social-links{
-    width: 80%;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-
-  .intro-img{
-    height: 49vh;
-    width: 25vw;
+    height: 31%;
+    width: 31%;
   }
 
   #get-to-know-me{
     width: 100%;
     justify-content: space-evenly;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
 
   #home-social-container{
@@ -245,11 +214,10 @@
   }
 
   #home-resume-container{
-    width: 30%;
+    width: 31%;
   }
 
   .social-links{
-    width: 70%;
     border-radius: 200px;
   }
 

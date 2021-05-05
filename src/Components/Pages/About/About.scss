@@ -12,10 +12,10 @@
 
 .text{
   line-height: 2.5rem;
-  font-size: 1.5em;
+  font-size: 2rem;
   font-weight: 500;
   overflow: hidden;
-  padding: 0 1.3rem;
+  padding: 0 .7rem;
 }
 
 #about-resume-container{
@@ -47,7 +47,7 @@
 
 .about-resume-header{
   font-size: 1.8rem;
-  line-height: 1.9rem;
+  line-height: 2.1rem;
   color: $light-gray;
   margin: 0 0 1.5rem 0;
   overflow: hidden;
@@ -62,11 +62,11 @@
 
 .goal-list{
   width: 90%;
-  padding: 1rem;
+  padding: 1rem .5rem 2.5rem .5rem;
   color: $blue;
   background-color: $light-gray;
   border-radius: 25px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.3rem;
   border-bottom: 3px solid $black;
@@ -83,6 +83,21 @@ hr{
 .goal{
   margin-top: 1rem;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "about-area hobbies"
+    "gallery interests";
+}
+
+.about-area { grid-area: about-area; }
+.hobbies { grid-area: hobbies; }
+.gallery { grid-area: gallery; }
+.interests { grid-area: interests; }
 
 
 @media screen and (min-width: 768px) {

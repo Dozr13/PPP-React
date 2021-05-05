@@ -51,9 +51,10 @@ function Footer() {
   const mobile = () => {
     return <footer id='footer'>
       <div className='footer-left'>
-        <span>Copyright &#169; {year}
-      <br/>
-        Pate's Programming
+        <span>
+          Copyright &#169; {year}
+        <br/>
+          Pate's Programming
         </span>
       </div>
       {footerLinks()}
@@ -67,13 +68,17 @@ function Footer() {
     return (
       <footer id='footer'>
         <div className='footer-left' style={{overflow: 'hidden'}}>
-          <span>Copyright &#169; {year} Pate's Programming</span>
+          <span>
+            Copyright &#169; {year} 
+          <br/>
+            Pate's Programming
+          </span>
         </div>
         <div className='footer-mid'>
           <h3 className='footer-text'>
-            Designed and Developed by Wade Pate with
+            Designed and Developed by
           <br/>
-            Pate's Programming
+            Wade Pate and Pate's Programming
           </h3>
         </div>
         {footerLinks()}

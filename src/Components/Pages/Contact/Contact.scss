@@ -1,13 +1,28 @@
 @import 'helpers/variables';
 
 
+::placeholder{
+  color: $light-blue;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .contact-container{
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
   padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.contact-info{
+  color: $off-white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.7rem;
+  line-height: normal;
+  margin: 1rem;
 }
 
 .contact-form{
@@ -16,7 +31,7 @@
 }
 
 .form-flex{
-  height: 85%;
+  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,16 +41,17 @@
 
 .form-input{
   height: 7%;
-  width: 70%;
-  font-size: 1.5rem;
+  width: 75%;
+  font-size: 1.8rem;
   text-align: center;
 }
 
 .form-textarea{
-  height: 13%;
-  width: 70%;
-  font-size: 2rem;
+  height: 15%;
+  width: 78%;
+  font-size: 1.8rem;
   text-align: center;
+  padding: 1.5rem 5px 0 5px;
 }
 
 .submit-container{
@@ -53,5 +69,41 @@
   font-weight: 600;
   color: $light-gray;
   background-color: $blue;
-  margin: .3rem 0 0 0;
+  margin: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .form-input{
+    width: 55%;
+    font-size: 1.7rem;
+  }
+  
+  .form-textarea{
+    width: 58%;
+  }
+
+  .submit-btn{
+    height: 14%;
+    width: 55%;
+    font-size: 2.3rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .form-input{
+    width: 35%;
+  }
+  
+  .form-textarea{
+    width: 40%;
+    padding: 1.8rem 5px 0 5px;
+  }
+
+  .submit-btn{
+    height: 14%;
+    width: 31%;
+    font-size: 2.5rem;
+  }
 }

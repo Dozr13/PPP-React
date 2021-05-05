@@ -28,12 +28,14 @@ function Home() {
         </div>
       </section>
 
-      <section id='about-me-container'>
-        <p className='about-summary'>
+      <section id='intro-container'>
+        <p className='intro-text'>
           My name is Wade and I'm a dedicated and driven developer that focuses on pristine functionality and logic on the backend while ensuring an outstanding UI/UX experience.
           I love learning new things, putting my all into anything I do.
-        </p>
-        <p className='skill-list'>
+
+        <br/>
+        <br/>
+
           I'm fluent in Web Development languages, specifically React, JavaScript, CSS, Node.js, PostgreSQL, Redux, and Context.
           I'm currently focusing on adding C# as well as Java to my mental database.
           <br/>
@@ -44,7 +46,7 @@ function Home() {
 
       <section id='get-to-know-me'>
         <div id='home-social-container'>
-          <h3 className='social-header underline'>
+          <h3 className='sub-header underline'>
             Find me on
           </h3>
           <div className='social-links'>
@@ -57,7 +59,7 @@ function Home() {
             target='_blank'
             rel='noopener noreferrer'
           > 
-            <h3 className='resume-header underline'>
+            <h3 className='sub-header underline'>
               View my Resume
             </h3>
             <div className='resume-link'>

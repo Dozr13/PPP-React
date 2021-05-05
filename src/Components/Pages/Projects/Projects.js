@@ -21,7 +21,9 @@ function Projects() {
               BillTrax
             </p>
             <p className='project-summary'>
-              Where users can keep track of their personal finances and budget costs.
+              This site was built for ease of access for users to keep track of and properly manage their personal finances.
+              <br/>
+              Built as a personal project for DevMountain boot camp. Uses React, Node, Express, Axios, Bcrypt, React Context, React Portal, and SASS.
             </p>
             <img className='project-image' src={process.env.PUBLIC_URL + '/img/BillTrax.png'} alt='BillTrax app' />
           </a>
@@ -33,7 +35,9 @@ function Projects() {
               Lorem Cakes
             </p>
             <p className='project-summary'>
-              A simple mock-up for a checkout cart, created with React and no Database
+              This page is a simple mock-up for a checkout cart, with some intricate JavaScript and React Components.
+              <br/>
+              Built with NoDB, plans to turn into a full site for a bakery owner.
             </p>
             <img className='project-image' src={process.env.PUBLIC_URL + '/img/LoremCakes.png'} alt='Lorem Cakes app' />
           </a>
@@ -44,7 +48,9 @@ function Projects() {
               G.R.C.
             </p>
             <p className='project-summary'>
-              Git-React Comps is a group project where you can upload and retrieve Component designs.
+              Git-React Comps is a site where you can easily upload and retrieve React Component designs for projects.
+              <br/>
+              Built as a group project at DevMountain boot camp. Uses React, Node, Express, React-Hook-Form, Codepen, Stripe, StyledComponents, AWS, and SASS.
             </p>
             <img className='project-image' src={process.env.PUBLIC_URL + '/img/GRC.png'} alt='Git-React Comps app' />
           </a>

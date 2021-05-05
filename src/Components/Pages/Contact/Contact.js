@@ -62,6 +62,12 @@ function Contact() {
           <h2>Contact Me</h2>
         </div>
 
+        <section className='contact-info'>
+          <h4>Email me directly at:</h4>
+          <p>wadejp8@gmail.com</p>
+        </section>
+
+
         <section className='contact-form'>
           <form className='form-flex' onSubmit={onSubmit}>
             <input className='form-input' name='name' type="text" required value={name} onChange={(e) => handleChange(e)} placeholder="Your Name" />
