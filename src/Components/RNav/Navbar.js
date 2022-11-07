@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
-import NavSC from './NavSC/NavSC'
-import Topbar from './Topbar/Topbar'
+import React, { useState } from 'react';
+import NavSC from './NavSC/NavSC';
+import Topbar from './Topbar/Topbar';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen)
-  }
-
+  };
 
   return (
     <>
@@ -17,6 +15,6 @@ const Navbar = () => {
       <NavSC toggle={toggle} />
     </>
   )
-}
+};
 
-export default Navbar
+export default Navbar;

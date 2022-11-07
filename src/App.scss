@@ -1,4 +1,4 @@
-@import 'helpers/variables';
+@import '../assets/sass/helpers/variables';
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
@@ -142,7 +142,7 @@
 
 
 #footer{
-  height: 8vh;
+  height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -160,7 +160,6 @@
   #footer{
     padding: .5rem;
   }
-  
 }
 
 

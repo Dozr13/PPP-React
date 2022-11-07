@@ -1,12 +1,10 @@
-@import 'helpers/variables';
-
+@import '../../../../assets/sass/helpers/variables';
 
 #intro{
   height: 35%;
   margin: 1em 0 0 0;
   overflow: hidden;
 }
-
 
 .intro-img{
   height: 80%;
@@ -30,54 +28,32 @@
   overflow: hidden;
 }
 
-
-// .about-summary{
-//   height: 52%;
-//   font-size: 1.5rem;
-//   font-weight: 550;
-//   line-height: 2rem;
-//   padding: .1rem 0;
-//   overflow: hidden;
-// }
-
-// .skill-list{
-//   height: 50%;
-//   width: 100%;
-//   font-size: 1.5rem;
-//   font-weight: 500;
-//   line-height: 2rem;
-//   padding: 1rem 0;
-//   overflow: hidden;
-// }
-
-
 #get-to-know-me{
   width: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
-  // align-items: center;
-  // margin: 0 auto;
   margin: 1rem 0;
 }
 
-
-#home-social-container{
+#home-links-container{
   width: 100%;
   display: flex;
+  border-radius: 20%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding-top: 1rem;
-  // position: relative;
-  // bottom: 0;
   overflow: hidden;
+  background-image:
+  radial-gradient(
+    $light-gray,
+    $dark-gray
+  );
 }
 
 .sub-header{
-  font-size: 2.4rem;
+  font-size: 2.1em;
   font-weight: 700;
-  line-height: 2.9rem;
+  line-height: 5rem;
   color: $off-white;
   margin-bottom: .5rem;
   overflow: hidden;
@@ -89,34 +65,30 @@
   overflow: hidden;
 }
 
-#home-resume-container{
-  width: 100%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  margin: 2.5rem 0 3rem 0;
-  overflow: hidden;
-    a{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
+// #home-links-container{
+//   width: 100%;
+//   margin: 2.5rem 0 3rem 0;
+//   overflow: hidden;
+//     a{
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+// }
 
-.resume-link{
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  background-image:
-  radial-gradient(
-    $light-gray,
-    $dark-gray
-    );
-  padding: .8rem 1rem .8rem 1rem;
-}
+// .resume-link{
+//   width: 90%;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50px;
+//   background-image:
+//   radial-gradient(
+//     $light-gray,
+//     $dark-gray
+//     );
+//   padding: .8rem 1rem .8rem 1rem;
+// }
 
 
 @media screen and (min-width: 768px) {
@@ -129,29 +101,10 @@
     font-size: 2rem;
     line-height: 2.4rem;
   }
-  
+
   #about-me-container{
     margin: 0 3rem;
   }
-  
-  // .about-summary{
-  //   height: 52%;
-  //   font-size: 2.5rem;
-  //   font-weight: 550;
-  //   line-height: 3.5rem;
-  //   padding: 1rem 0;
-  //   overflow: hidden;
-  // }
-  
-  // .skill-list{
-  //   height: 50%;
-  //   width: 100%;
-  //   font-size: 2.5rem;
-  //   font-weight: 500;
-  //   line-height: 3.5rem;
-  //   padding: 2rem 0;
-  //   overflow: hidden;
-  // }
 
   #get-to-know-me{
     width: 100%;
@@ -159,20 +112,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    // margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
 
   #home-social-container{
     width: 40%;
-    // position: relative;
-    // bottom: 0;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     overflow: hidden;
-    // padding-top: 1rem;
   }
 
   .social-links{
@@ -180,22 +126,17 @@
     border-radius: 50px;
   }
 
-  #home-resume-container{
+  #home-links-container{
     width: 40%;
-    // display: flex;
-    // flex-direction: column;
     overflow: hidden;
-    // padding-top: 1rem;
   }
 
-
-  .resume-link{
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    }
+  // .resume-link{
+  //   width: 95%;
+  //   justify-content: center;
+  //   align-items: center;
+  //   }
 }
-
 
 @media screen and (min-width: 1024px) {
   .intro-img{
@@ -209,7 +150,7 @@
     margin-bottom: 1rem;
   }
 
-  #home-social-container{
+  #home-links-container{
     width: 30%;
   }
 
@@ -220,5 +161,4 @@
   .social-links{
     border-radius: 200px;
   }
-
 }

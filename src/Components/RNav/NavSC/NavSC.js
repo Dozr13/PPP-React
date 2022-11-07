@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import { Nav, NavLink, Bars, NavMenu } from "./NavEl";
-
 
 const NavSC = ({toggle}) => {
   return (
@@ -40,6 +39,6 @@ const NavSC = ({toggle}) => {
       </Nav>
     </>
   )
-}
+};
 
-export default NavSC
+export default NavSC;

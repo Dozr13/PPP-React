@@ -1,17 +1,8 @@
-@import 'helpers/variables';
+@import '../../../assets/sass/helpers/variables';
 
-
-.social-container {
-  // min-width: 100%;
+.info-links {
   justify-content: center;
   align-items: center;
-  background-image:
-    radial-gradient(
-      $light-gray,
-      $dark-gray
-    );
-  // border-radius: 0px;
-  // margin-top: .5rem;
 }
 
 a.social {
@@ -37,7 +28,6 @@ a.twitter {
   color: #49a1eb;
 }
 
-
-a.soc-resume{
-  color: white;
+a.resume{
+  color: #FFF;
 }

@@ -26,10 +26,9 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 `
 
-
 export const Bars = styled(FaBars)`
   display: none;
-  
+
   @media screen and (max-width: 1200px) {
     color: #fff;
     display: block;

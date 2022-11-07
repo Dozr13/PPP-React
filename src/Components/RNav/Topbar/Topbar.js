@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {ReactComponent as Logo} from '../../../Img/logo-stamp.svg';
-import {TopbarContainer, Icon, CloseIcon, TopbarWrapper, TopbarMenu, TopbarLink} from './TopbarEl'
+import {TopbarContainer, Icon, CloseIcon, TopbarWrapper, TopbarMenu, TopbarLink} from './TopbarEl';
 
 const Topbar = ({isOpen, toggle}) => {
   return (
@@ -23,4 +23,4 @@ const Topbar = ({isOpen, toggle}) => {
   )
 }
 
-export default Topbar
+export default Topbar;

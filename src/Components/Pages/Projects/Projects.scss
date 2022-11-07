@@ -1,5 +1,4 @@
-@import 'helpers/variables';
-
+@import '../../../../assets/sass/helpers/variables';
 
 a{
   text-decoration: none;
@@ -20,7 +19,7 @@ a{
 
 .project-title{
   height: 30%;
-  
+
   font-size: 3rem;
   color: $blue;
   overflow: hidden;

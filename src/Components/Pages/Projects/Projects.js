@@ -1,9 +1,7 @@
-import React, {useLayoutEffect} from 'react'
-
-import './Projects.scss'
+import React, {useLayoutEffect} from 'react';
+import './Projects.scss';
 
 function Projects() {
-
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
 });
@@ -13,7 +11,6 @@ function Projects() {
       <section className='page-title'>
         <h2>Some of my Projects!</h2>
       </section>
-
       <section className='project-list'>
         <div className='project-container'>
           <a target='_blank' rel='noreferrer' href='https://billtrax.org/' >
@@ -58,6 +55,6 @@ function Projects() {
       </section>
     </div>
   )
-}
+};
 
-export default Projects
+export default Projects;

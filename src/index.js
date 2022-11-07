@@ -4,9 +4,8 @@ import {HashRouter, BrowserRouter} from 'react-router-dom';
 import App from './App';
 import './index.scss';
 
-const Router = 
+const Router =
   process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter;
-
 
 ReactDOM.render(
     <Router>

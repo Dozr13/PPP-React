@@ -1,4 +1,4 @@
-@import 'helpers/variables';
+@import '../../../../assets/sass/helpers/variables';
 
 
 ::placeholder{
@@ -78,7 +78,7 @@
     width: 55%;
     font-size: 1.7rem;
   }
-  
+
   .form-textarea{
     width: 58%;
   }
@@ -95,7 +95,7 @@
   .form-input{
     width: 35%;
   }
-  
+
   .form-textarea{
     width: 40%;
     padding: 1.8rem 5px 0 5px;

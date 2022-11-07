@@ -1,16 +1,11 @@
-import React from 'react'
-import {ReactComponent as Logo} from '../../Img/logo-stamp.svg'
-import Type from './Type'
-
+import React from 'react';
+import {ReactComponent as Logo} from '../../Img/logo-stamp.svg';
+import Type from './Type';
 import Particles from 'react-particles-js';
 import particlesConfig from '../../config/particlesConfig';
-
-import './Landing.scss'
-
+import './Landing.scss';
 
 function Landing() {
-  // const [navMenu, setNavMenu] = useState(false);
-
   const myName = <p style={{color: '#043363', height: '25%', fontSize: '4rem', fontWeight: 700, textAlign: 'center', overflow: 'hidden'}}>Wade Pate</p>;
 
   return (
@@ -18,11 +13,9 @@ function Landing() {
       <div className='particles' style={{position: 'absolute'}}>
         <Particles height="100vh" width="100vw" params={particlesConfig} />
       </div>
-
       <section id='logo-container'>
         <Logo className='logo' alt='Brand Logo' />
       </section>
-
       <section id='welcome-msg-container'>
         <h3 className='welcome'>
           Welcome!
@@ -40,6 +33,6 @@ function Landing() {
       </section>
     </div>
   )
-}
+};
 
-export default Landing
+export default Landing;
